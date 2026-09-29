@@ -1,1 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathys Duthilleul — Portfolio BTS SIO SISR</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --border: #e2e8f0;
+      --tag-bg: #eff6ff;
+      --tag-text: #1d4ed8;
+    }
 
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; }
+    
+    header { background: #ffffff; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; }
+    .nav-container { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+    .nav-logo { font-weight: 700; font-size: 1.1rem; color: var(--text); text-decoration: none; }
+    .nav-links a { margin-left: 20px; text-decoration: none; color: var(--text-muted); font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--primary); }
+
+    .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+    
+    /* Hero section */
+    .hero { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 35px; margin-bottom: 40px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+    .hero h1 { font-size: 2.2rem; color: var(--text); margin-bottom: 5px; }
+    .hero .status { color: var(--primary); font-size: 1.2rem; font-weight: 600; margin-bottom: 15px; }
+    .hero p { color: var(--text-muted); max-width: 800px; margin-bottom: 25px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 10px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 0.95rem; transition: background 0.2s; }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text); }
+    .btn-outline:hover { background: #f1f5f9; }
+
+    /* Sections */
+    section { margin-bottom: 50px; }
+    h2 { font-size: 1.5rem; margin-bottom: 20px; border-left: 4px solid var(--primary); padding-left: 12px; color: var(--text); }
+    
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+    .card h3 { font-size: 1.2rem; margin-bottom: 8px; color: var(--text); }
+    .card .meta { font-size: 0.85rem; color: var(--primary); font-weight: 600; margin-bottom: 12px; text-transform: uppercase; }
+    .card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px; }
+    .card ul { margin-left: 18px; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+    .tag { background: var(--tag-bg); color: var(--tag-text); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+
+    /* E4 Section */
+    .e4-box { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 25px; margin-bottom: 30px; }
+    .e4-box h3 { color: #1e40af; margin-bottom: 10px; }
+
+    footer { text-align: center; padding: 30px 20px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.9rem; background: #fff; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Mathys Duthilleul</a>
+      <nav class="nav-links">
+        <a href="#stages">Stages</a>
+        <a href="#projets">Projets</a>
+        <a href="#synthese">Épreuve E4</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    
+    <!-- Hero / Présentation -->
+    <div class="hero">
+      <h1>Mathys Duthilleul</h1>
+      <div class="status">Étudiant en BTS SIO (option SISR) — Lycée Sidoine Apollinaire</div>
+      <p>
+        Passionné d'infrastructures réseaux, d'administration système et de maintenance matérielle. 
+        Ce portfolio réunit mes projets techniques menés en formation, mes missions de support en entreprise et le suivi de mes compétences pour l'épreuve E4.
+      </p>
+      <div class="hero-actions">
+        <a href="CV_Mathys_Duthilleul.pdf" target="_blank" class="btn btn-primary">Consulter mon CV</a>
+        <a href="#synthese" class="btn btn-outline">Tableau de synthèse E4</a>
+      </div>
+    </div>
+
+    <!-- Épreuve E4 & Tableau de synthèse -->
+    <section id="synthese">
+      <h2>Épreuve E4 — Support et mise à disposition de services</h2>
+      <div class="e4-box">
+        <h3>Dossier technique & Tableau de compétences</h3>
+        <p>Le tableau de synthèse récapitule l'ensemble des compétences du Bloc 1 validées au cours de mes deux années de formation (en centre de formation et en milieu professionnel).</p>
+        <a href="tableau-de-synthese.pdf" target="_blank" class="btn btn-primary" style="background:#1e40af;">Télécharger le tableau officiel (PDF)</a>
+      </div>
+    </section>
+
+    <!-- Expériences en entreprise (Stages) -->
+    <section id="stages">
+      <h2>Stages en entreprise</h2>
+      <div class="grid">
+        
+        <!-- Stage 1ère année -->
+        <div class="card">
+          <div class="meta">Stage 1re année · Mai - Juin 2026 (6 sem.)</div>
+          <h3>Vanotec Informatique — Decazeville</h3>
+          <p>Technicien de maintenance d'atelier et support :</p>
+          <ul>
+            <li><strong>Déploiement Windows 11 :</strong> clonage hors-ligne et installation de SSD sur un stock d'environ 100 PC Terra d'occasion (station Inateck).</li>
+            <li><strong>Banc d'essai & tests E/S :</strong> vérification systématique audio, USB, affichage, connectivité réseau et détection des pannes de boot (POST).</li>
+            <li><strong>Résolution d'incident réseau :</strong> diagnostic matériel lié à une surchauffe d'atelier et déblocage du service DHCP sur routeur.</li>
+            <li><strong>Filière recyclage :</strong> désassemblage de 30 PC obsolètes, tri des pièces réutilisables (RAM, alim) et palettisation des carcasses métalliques.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Clonage disque</span>
+            <span class="tag">Banc de test</span>
+            <span class="tag">Dépannage DHCP</span>
+            <span class="tag">Recyclage / Matériel</span>
+          </div>
+        </div>
+
+        <!-- Stage 2ème année -->
+        <div class="card">
+          <div class="meta">Stage 2e année · 2027 (7 sem.)</div>
+          <h3>Administration Systèmes & Réseaux</h3>
+          <p>Missions d'infrastructure et d'administration en cours de réalisation :</p>
+          <ul>
+            <li>Gestion et sécurisation de parcs informatiques.</li>
+            <li>Déploiement de services d'annuaire et politiques de sécurité.</li>
+            <li>Supervision réseau et assistance aux utilisateurs.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Active Directory</span>
+            <span class="tag">VLAN</span>
+            <span class="tag">Supervision</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projets en classe (BTS SIO) -->
+    <section id="projets">
+      <h2>Projets & Réalisations en formation</h2>
+      <div class="grid">
+
+        <!-- Projet 1 : Réseau Cisco -->
+        <div class="card">
+          <div class="meta">Infrastructure Réseau</div>
+          <h3>Segmentation et routage inter-VLAN</h3>
+          <p>Mise en place d'une architecture d'entreprise cloisonnée sur routeurs et switchs Cisco (Packet Tracer & matériel réel).</p>
+          <ul>
+            <li>Création et adressage de sous-réseaux (VLSM).</li>
+            <li>Configuration de VLANs par service et liaisons Trunk (802.1Q).</li>
+            <li>Routage inter-VLAN (Router-on-a-stick) et sécurisation des ports (Port-Security).</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Cisco IOS</span>
+            <span class="tag">VLAN</span>
+            <span class="tag">Routage</span>
+          </div>
+        </div>
+
+        <!-- Projet 2 : Windows Server -->
+        <div class="card">
+          <div class="meta">Administration Système</div>
+          <h3>Infrastructure Active Directory & Services</h3>
+          <p>Déploiement d'un environnement d'entreprise sous Windows Server virtualisé.</p>
+          <ul>
+            <li>Installation et promotion du contrôleur de domaine (AD DS).</li>
+            <li>Création de l'arborescence des unités d'organisation (OU), utilisateurs et groupes.</li>
+            <li>Déploiement de stratégies de groupe (GPO) et configuration des services DNS / DHCP.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Windows Server</span>
+            <span class="tag">Active Directory</span>
+            <span class="tag">GPO / DHCP</span>
+          </div>
+        </div>
+
+        <!-- Projet 3 : Sécurité & Pare-feu -->
+        <div class="card">
+          <div class="meta">Sécurité Périmétrique</div>
+          <h3>Déploiement d'un pare-feu IPFire</h3>
+          <p>Sécurisation des flux réseaux et filtrage des accès Internet pour une infrastructure locale.</p>
+          <ul>
+            <li>Segmentation par zones (Rouge / Verte / Bleue / Orange DMZ).</li>
+            <li>Création de règles de filtrage de paquets et redirection de ports (NAT).</li>
+            <li>Mise en place d'un proxy web pour le contrôle des flux sortants.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">IPFire</span>
+            <span class="tag">Pare-feu</span>
+            <span class="tag">NAT / DMZ</span>
+          </div>
+        </div>
+
+        <!-- Projet 4 : Virtualisation & Scripting -->
+        <div class="card">
+          <div class="meta">Automatisation & Systèmes</div>
+          <h3>Serveurs Linux & Scripts d'administration</h3>
+          <p>Mise en place de serveurs Debian/Ubuntu sous environnement VMware et automatisation de tâches.</p>
+          <ul>
+            <li>Installation et configuration de serveurs web Apache et bases de données SQL.</li>
+            <li>Développement de scripts Bash et PowerShell pour la sauvegarde automatisée.</li>
+            <li>Gestion des permissions utilisateurs, logs et droits d'accès.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Linux / Bash</span>
+            <span class="tag">PowerShell</span>
+            <span class="tag">VMware</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card" style="max-width: 600px;">
+        <p><strong>Localisation :</strong> 03800 Gannat / Clermont-Ferrand</p>
+        <p><strong>Email :</strong> <a href="mailto:mathysduthilleul03@gmail.com" style="color: var(--primary);">mathysduthilleul03@gmail.com</a></p>
+        <p><strong>Téléphone :</strong> 06 41 42 36 94</p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2026 Mathys Duthilleul — Portfolio BTS SIO SISR — Lycée Sidoine Apollinaire
+  </footer>
+
+</body>
+</html>
